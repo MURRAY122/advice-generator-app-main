@@ -1,0 +1,63 @@
+@use "./variables" as v;
+@use "./mixins" as u;
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 1rem;
+        background-color: v.$dark-grayish-blue;
+        padding: 1rem 1rem 2rem 1rem;
+        max-width: 450px;
+        min-height: 212px;
+    }
+
+    &__id{
+        text-align: center;
+        font-weight: none;
+        font-size: v.$font-sm;
+        letter-spacing: 2px;
+        color: v.$neon-green;
+        margin: 1rem;
+    }
+    &__advice{
+        text-align: center;
+        margin: 0rem .5rem;
+        font-size: v.$font-md;
+        font-weight: 800;
+    }
+    &__divider{
+        background-image: url("../images/pattern-divider-mobile.svg");
+        background-repeat: repeat-x;
+        background-position: center;
+        height: 32px;
+        margin: 1rem;
+    }
+    &__dice{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 54px;
+        height: 54px;
+        background-color: v.$neon-green;
+        transform: translateY(-28px);
+        border-radius: 100%;
+
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0px 5px 30px v.$neon-green;
+        }
+        }
+    }
+}
