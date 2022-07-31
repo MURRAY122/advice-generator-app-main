@@ -1,0 +1,28 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    font-family: var(--font-inter);
+    background: var(--dark-blue);
+    color: var(--light-cyan);
+  }
+
+footer{
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(227, 45%, 75%); }
+}
